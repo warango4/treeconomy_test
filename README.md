@@ -53,7 +53,7 @@ To post a new product, you open Postman and insert a new body, as raw or as form
 An example of how should be the body is given below:
 ![Postman post](/images/post_postman.png)
 **IMPORTANT:** you have to make sure you add the `application/json` to your headers as follows:
-![Postman post headers](/images/post_header_postman.png)
+![Postman post headers](/images/post_headers_postman.png)
 And, as you can see in the image above, the request returned a 200 code which means it could insert in the endpoint. 
 Also, you can check in your terminal the requests the api has had.
 ![Requests terminal](/images/requests_terminal.png)
