@@ -1,0 +1,21 @@
+<!-- home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="col-md-6 col-auto">
+  <div class="card">
+    <div class="card-header">
+      Productos
+    </div>
+    <ul class="list-group list-group-flush">
+      {% for key, value in products.items %}
+      <li class="list-group-item">{{ value.productname }} - {{ value.description }} - {{ value.value }}</li>
+      <!--<li class="list-group-item">{{ value.description }}</li>
+      <li class="list-group-item">{{ value.value }}</li>-->
+      {% empty %}
+      {% endfor %}
+      <li>Suma total de todos los productos: {{total_value}}</li>
+    </ul>
+  </div>
+</div>
+{% endblock content %}
