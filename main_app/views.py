@@ -35,4 +35,3 @@ def product_modification(request):
 class DessertViewSet(viewsets.ModelViewSet):
    serializer_class = DessertSerializer
    queryset = Dessert.objects.all()
-
